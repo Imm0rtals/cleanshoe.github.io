@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+h2, h3{
+	color: #686868;
+}
+
+*{
+	box-sizing: border-box;
+}
+.header{
+	height: 65px;
+	width: 100%;
+	background-color: rgba(34, 49, 52, 0.9);
+	position :fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.logo{
+	width: 180px;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.logo-left{
+	float: left;
+}
+
+nav a{
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #0FB1F5;
+	padding: 0 25px;
+	transition: all 0.5s;
+}
+
+nav li{	
+	list-style-type: none;
+	float: right;
+	margin-right: 25px;
+}
+
+nav a:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu{
+	color: #0FB1F5;
+	float: right;
+	font-size: 25px;
+	padding: 21px 0;
+	display: none;
+}
+
+p{
+	color: #2c2c2c;
+}
+
+.tengah{
+	text-align: center;
+	color: #2c2c2c;
+}
+
+.profile header{
+	text-align: center;
+}
+
+.image{
+	overflow: hidden;
+	max-width: 400px;
+	padding: 5px;
+	max-height: 200px;
+	display: inline;
+	margin-left: 50px;
+	width: 100%;
+}
+
+.profil img{
+	width: 200px;
+}
+
+.card{
+	background-color: #bdbebd;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+main{
+	padding: 20px;
+	overflow: auto;
+}
+
+#content{
+	float: right;
+	width: 75%;
+}
+
+aside{
+	float: left;
+	width: 25%;
+	padding-right: 20px;
+}
+
+th{
+	text-align: left;
+}
+
+footer {
+   padding: 5px;
+   color: #686868;
+   background-color: #949494;
+   text-align: center;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+	nav li{
+		display: none;
+	}
+
+	.menu{
+		display: block;
+	}
+
+	.image{
+		overflow: hidden;
+		max-width: 300px;
+		padding: 5px;
+		max-height: 200px;
+		display: block;
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	#content,
+	aside{
+		width: 100%;
+		padding: 0;
+	}
+}
